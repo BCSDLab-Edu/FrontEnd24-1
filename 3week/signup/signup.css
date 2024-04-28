@@ -1,0 +1,125 @@
+body {
+    background-color: rgba(121, 105, 228, 0.446);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: small;
+}
+
+.link-container {
+    position: relative;
+    width: 95vw;
+    height: 5vh;
+}
+
+.signin-link {
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    font-size: small;
+}
+
+.contents-container {
+    width: 98.5vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 3fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 0.7fr 1fr;
+    justify-items: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.title {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: x-large;
+    font-weight: 800;
+    color: rgb(18, 3, 101);
+    border-style: dashed;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.id-mark {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: end;
+}
+
+.id {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: start;
+}
+
+.pw-mark {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: end;
+}
+
+.pw {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: start;
+}
+
+.pw-check-mark {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    justify-self: end;
+}
+
+.pw-check {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: start;
+}
+
+.student-number-mark {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    justify-self: end;
+}
+
+.student-number {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    justify-self: start;
+}
+
+.major-mark {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    justify-self: end;
+}
+
+.major {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    justify-self: start;
+}
+
+.phone-number-mark {
+    grid-column: 1/2;
+    grid-row: 7/8;
+    justify-self: end;
+}
+
+.phone-number {
+    grid-column: 2/3;
+    grid-row: 7/8;
+    justify-self: start;
+}
+
+.btn-line {
+    grid-column: 1/3;
+    grid-row: 9/10;
+    justify-self: center;
+}
+
+
