@@ -1,0 +1,30 @@
+body {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;   /* 세로 방향 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  height: 100vh; /* 화면 전체 높이에 맞춤 */
+  margin: 0; /* margin 제거 */
+}
+
+#id_input {
+  height: 4vh;
+  width: 50vw;
+  border-radius: 10px;
+
+}
+
+#pw_input {
+  height: 4vh;
+  width: 50vw;
+  border-radius: 10px;
+}
+
+#ok {
+  background-color: rgb(249, 229, 229);
+  font-size: large;
+  border-radius: 10px;  /* 버튼 테두리 둥글게 */
+  padding: 2px;  /* 버튼 크기 키우기 */
+  width: 100px; /* 버튼의 고정된 너비 */
+}

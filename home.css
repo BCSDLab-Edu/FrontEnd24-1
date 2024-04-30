@@ -1,0 +1,33 @@
+body {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;   /* 세로 방향 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  height: 100vh; /* 화면 전체 높이에 맞춤 */
+  margin: 0; /* margin 제거 */
+}
+
+h1 {
+  text-align: center;
+  top: 10px;
+
+}
+
+#join{
+  background-color: rgb(249, 229, 229);
+  font-size: large;
+  text-align: center;
+  border-radius: 10px;  /* 버튼 테두리 둥글게 */
+  padding: 9px;  /* 버튼 크기 키우기 */  
+  width: 300px; /* 버튼의 고정된 너비 */
+}
+
+#login{
+  background-color: rgb(249, 229, 229);
+  font-size: large;
+  border-radius: 10px;  /* 버튼 테두리 둥글게 */
+  padding: 9px;  /* 버튼 크기 키우기 */
+  width: 300px; /* 버튼의 고정된 너비 */
+
+}
