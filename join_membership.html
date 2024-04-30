@@ -6,27 +6,35 @@
   <link rel="stylesheet" href="join_membership.css"></link>
 </head>
 <body>
-  <h1>회원가입 페이지</h1>
-  <div class = "id">
-    아이디: <input id="id_new" type="text" placeholder="아이디 입력">
-  </div>
-  <br>
-  <div class = 'pw'>
-    비밀번호: <input id="pw_new" type="password" placeholder="비밀번호 입력">
-  </div>
-  <br>
-  <div class="pw_confirm">
-    비밀번호 확인: <input id="pw_c" type="password" placeholder="비밀번호 확인">
-  </div>
-  <br>
-  <div class = "major">
-    학번: <input id="major_new" type="text" placeholder="학번 입력">
-  </div>
-  <br>
-  <div class = "sign_button">
-    <input id = "signup" type="button" value="회원가입">
-    <input id = "cancel" type="button" value="회원가입 취소" onclick="location.href = 'login.html'">
-  </div>
+  <nav class="nav_bar">
+    <div class="signin_link">
+      <a href = "login.html">로그인 페이지 이동</a>
+    </div>
+  </nav>
+  <div class = 'center'>
+    <h1>회원가입 페이지</h1>
+    <div class = "id">
+      아이디: <input id="id_new" type="text" placeholder="아이디 입력">
+    </div>
+    <br>
+    <div class = 'pw'>
+      비밀번호: <input id="pw_new" type="password" placeholder="비밀번호 입력">
+    </div>
+    <br>
+    <div class="pw_confirm">
+      비밀번호 확인: <input id="pw_c" type="password" placeholder="비밀번호 확인">
+    </div>
+    <br>
+    <div class = "major">
+      학번: <input id="major_new" type="text" placeholder="학번 입력">
+    </div>
+    <br>
+    <div class = "sign_button">
+      <input id = "signup" type="button" value="회원가입">
+      <input id = "cancel" type="button" value="회원가입 취소" onclick="location.href = 'login.html'">
+    </div>
+    </div>
+  
  
 </body>
 </html>
