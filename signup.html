@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> TEAM-mate signup </title>
-    <link rel="stylesheet" href="sign.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet"></head>
@@ -21,56 +21,50 @@
                 <div class="user-info">
                     <div class="id">
                         <div>* 아이디</div> 
-                        <input type="text" > 
+                        <input type="text" placeholder="이메일 형식 " > 
                     </div>
                     <div class="pw"> 
                         <div>* 비밀번호</div> 
-                        <input type="password">
+                        <input type="password" placeholder="비밀번호 입력 ">
 
                     </div>
                     <div class="pw-check"> 
                         <div>* 비밀번호 확인</div> 
-                        <input type="password">
+                        <input type="password" placeholder="비밀번호 확인 ">
                     </div>  
                     <div class="student-number"> 
                         <div>* 학번</div> 
-                        <input type="text">
+                        <input type="text" placeholder="학번 (10자리) ">
                     </div>
 
                     <div class="major"> 
 
                         <div>* 전공</div> 
-                        <input type="text">
+                        <input type="text" placeholder="전공 ">
                     </div>
                     <div class="phone-number">
                         <div>* 전화번호</div> 
-                        <input type="text" >
+                        <input type="text" placeholder="ex. 010-1234-5678 " >
                     </div>
                 </div>
                 
-                <span display="flex">
-                    <div class="signup">              
+                    <div class="signup" display = "flex">              
                         <button> signup </button>
                     </div>
                     <div class="cancel">
                         <button > cancel </button> 
                     </div>
-                </span>
             </div>
 
-            <div>
-                <a class="signin-link"> >로그인 페이지로 이동 </a><br>
-                <a class="signup-link"> >회원가입 페이지로 이동 </a>
-    
-            </div>
             
+            <div class="button" >
+                <a href="home.html"> <button>메인화면으로 이동</button> </a> 
+                <a href="signin.html"> <button>로그인 화면으로 이동 </button></a> 
+            </div> 
         
-            <div id="signin">
-                <input type="text" class="id">
-                <input type="text" class="pw">
-                <button class="signin"> signin </button> 
+          
 
-        </div>
+   
         
         
     <script src="signin.js"></script>
