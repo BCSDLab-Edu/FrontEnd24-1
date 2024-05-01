@@ -1,4 +1,4 @@
-const button = document.getElementById("add-todo"); //버튼
+const button = document.getElementById("addbutton"); //버튼
 
 
 function signUpCheck(){
