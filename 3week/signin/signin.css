@@ -1,0 +1,71 @@
+body {
+    background-color: rgba(121, 105, 228, 0.446);
+}
+
+.link-container {
+    position: relative;
+    width: 95vw;
+    height: 5vh;
+}
+
+.signup-link {
+    position: absolute;
+    right: 1%;
+    top: 5%;
+    font-size: small;
+}
+
+.contents-container {
+    width: 98.5vw;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    position: absolute;
+    top: 8%;
+    font-size: x-large;
+    font-weight: 800;
+    color: rgb(18, 3, 101);
+    border-style: dashed;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.id-line {
+    width: 30vw;
+    position: absolute;
+    top: 35%;
+    right: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.id {
+    margin-left: 15px;
+}
+
+.pw-line {
+    width: 30vw;
+    position: absolute;
+    top: 50%;
+    right: 35.5%; 
+    display: flex;
+    justify-content: center;
+}
+
+.pw {
+    margin-left: 15px;
+}
+
+.login {
+    position: absolute;
+    top: 70%
+}
