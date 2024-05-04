@@ -25,7 +25,6 @@ body {
   border: 1px solid;
   border-color: rgb(16, 9, 144);
 }
-.logIn,
 .id,
 .pw {
   display: block;
@@ -35,7 +34,7 @@ body {
   padding: 10px;
   margin: 5px;
 }
-.move {
+.login {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

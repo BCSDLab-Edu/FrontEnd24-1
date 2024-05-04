@@ -13,27 +13,25 @@ body {
   height: 100vh;
   /* 화면 고정 */
   padding: 0;
-  gap: 5px;
+  margin: 0;
 }
 .inputInfor {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0;
-  width: 350px;
+  width: 500px;
   /* 표시 */
   border: 1px solid;
   border-color: rgb(16, 9, 144);
-  gap: 5px;
 }
 .move {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
-  gap: 5px;
 }
-.sign-up,
+
 .id,
 .pw,
 .pw-check,
@@ -42,9 +40,17 @@ body {
 .phone-number,
 .signup,
 .cancle {
-  display: block;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   text-align: center;
   font-size: 18px;
   text-decoration: none;
   padding: 10px;
+  margin: 5px;
+}
+
+.major:empty:before {
+  display: block;
+  content: attr(placeholder);
+  color: #717171;
 }
