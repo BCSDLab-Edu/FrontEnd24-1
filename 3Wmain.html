@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입 페이지</title>
     <link rel="stylesheet" href="3Wmain.css">
-</head>
+</head> 
 <body>
     <div class="container">
         <div class="info_container">
@@ -18,29 +18,30 @@
                 </div>
                 <div class="info"><span class ="star">*</span>비밀번호
                     <div>
-                        <input class="pw" type="text" size="50" style="height:25px;">
+                        <input class="pw" type="password" size="50" style="height:25px;">
                     </div>
                 </div>
-                <div class="info"><span class ="star">*</span>비밀번호 확인
+                <div class="info1"><span class ="star">*</span>비밀번호 확인
                     <div>
-                        <input class="pw-check" type="text" size="50" style="height: 25px;">
+                        <input class="pw_check" type="password" size="50" style="height: 25px;">
                     </div>
                 </div>
-                <div class="info"><span class ="star">*</span>학번
-                    <input class="student-number" type="text" size="50" style="height: 25px;">
+                <div class="info2"><span class ="star">*</span>학번
+                    <input class="student_number" type="text" maxlength="10" oninput="maxnum(this,10)" size="50" style="height: 25px;">
                 </div>
-                <div class="info">전공
-                    <input class="major" type="text" size="50" style="height: 25px;">
+                <div class="info3">전공
+                    <input class="major" type="text" size="50" style="height: 25px;" disabled>
                 </div>
-                <div class="info">전화번호
-                    <input class="phone-number" type="text" size="50" style="height: 25px;">
+                <div class="info4">전화번호
+                    <input class="phone_number" type="text" size="50" style="height: 25px;">
                 </div>
                 <div class="button">
-                    <a href="3Wlogin.html"><button>취소</button></a>
+                    <button class="btn2">취소</button>
                     <a href="3Wlogin.html"><button id="btn1">가입하기</button></a>
                 </div>
             </div>
         </div>
     </div>
+    <script src="4Wmain.js"></script>
 </body>
 </html>

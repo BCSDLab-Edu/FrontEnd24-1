@@ -16,7 +16,7 @@ body {
     border-radius: 20px;
     background-color: white;
 }
-  .info_container {
+.info_container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,14 +42,38 @@ body {
     font-size: 17px;
     margin-top: 40px;
     font-weight: bold;
-   
+
+}
+.info1{
+    font-size: 17px;
+    margin-top: 40px;
+    font-weight: bold;
+
+}
+.info2{
+    font-size: 17px;
+    margin-top: 40px;
+    font-weight: bold;
+
+}
+.info3{
+    font-size: 17px;
+    margin-top: 40px;
+    font-weight: bold;
+
+}
+.info4{
+    font-size: 17px;
+    margin-top: 40px;
+    font-weight: bold;
+
 }
 .button{
     padding-left: 55px;
     display: flex;
     flex-direction: row;
 }
-a > button{
+a > button,.btn2{
     margin-top: 90px;
     padding: 13px;
     font-size: 20px;

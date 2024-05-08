@@ -16,7 +16,7 @@ body {
     border-radius: 20px;
     background-color: white;
 }
-  .login_inter {
+.login_inter {
     display: flex;
     flex-direction: column;
     align-items: center;
