@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="6Wmarvel.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</head>
+<body>
+    <div class="con1"></div>
+    <script>
+        const publickey = "e236a5b097a3837a8d49c6acbfcf1dea";
+        const privatekey = "d1e419e487533f4d9ff672476e854cd167555ed4";
+        const ts = new Date().getTime();
+        const hash = CryptoJS.MD5(ts + privatekey + publickey).toString();
+        const url = `http://gateway.marvel.com/v1/public/comics?ts=${ts}&apikey=${publickey}&hash=${hash}`;
+
+        async function getdata() {
+            const response = await axios.get(url);
+            const data = response.data.data.results;
+            console.log(data);
+            data.forEach(book => {
+                const $con1 = document.querySelector('.con1');
+
+                const $book = document.createElement('div');
+
+                const $title =document.createElement('h1');
+                $title.innerText = book.title;
+                $book.appendChild($title);
+
+                const $img = document.createElement('img');
+                $img.src = book.thumbnail.path + '.jpg';
+                $book.appendChild($img);
+
+                const data2 = book.creators.items;
+                data2.forEach(dat => {
+                    const $author = document.createElement('p');
+                    $author.innerText = dat.name;
+                    $book.appendChild($author);
+                })
+                $con1.appendChild($book);
+                console.log($title);
+            });
+        }
+        getdata();
+    </script>
+</body>
+</html>
