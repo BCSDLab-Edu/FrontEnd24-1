@@ -1,8 +1,8 @@
 body {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     background-color: rgb(249, 249, 236);
+    margin-left: 5%;
 }
 .container {
     display: flex;
@@ -15,6 +15,7 @@ body {
     border: 5px solid #bcf9e0;
     border-radius: 20px;
     background-color: white;
+    margin-left: 80px;
 }
 .info_container {
     display: flex;
@@ -66,20 +67,21 @@ body {
     font-size: 17px;
     margin-top: 40px;
     font-weight: bold;
-
 }
 .button{
     padding-left: 55px;
     display: flex;
     flex-direction: row;
 }
-a > button,.btn2{
+a > button,.btn2,.btn3{
     margin-top: 90px;
     padding: 13px;
     font-size: 20px;
     font-weight: bold;
-
 }
-#btn1{
-    margin-left: 70px;
+.btn2{
+    margin-right: 70px;
+}
+.cat{
+    padding-top: 400px;
 }

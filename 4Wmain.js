@@ -93,13 +93,24 @@ $button3.addEventListener("click", function(){
     window.location.href = "3Wlogin.html";
   });
 
+const $button4 = document.querySelector(".btn3");
+$button4.addEventListener("click", function(){
+    window.location.href = "3Wlogin.html";
+  });
+//////////////////////////////////////////////////////////
+fetch('https://api.thecatapi.com/v1/images/search?size=full')
+    .then(response => response.json())
+    .then(data => {
+        const imageUrl = data[0].url;
+        const imgElement = document.createElement('img');
+        imgElement.src = imageUrl;
+        imgElement.style.width = "300px";
+        imgElement.style.height = "300px";
 
-
-
-
-
-
-
-
-
+        const container = document.querySelector('.cat');
+        container.appendChild(imgElement);
+    })
+    .catch(error => {
+        console.error('Error', error);
+    });
 
