@@ -11,8 +11,8 @@
 <body>
     <div class="con1"></div>
     <script>
-        const publickey = "e236a5b097a3837a8d49c6acbfcf1dea";
-        const privatekey = "d1e419e487533f4d9ff672476e854cd167555ed4";
+        const publickey = "";
+        const privatekey = "";
         const ts = new Date().getTime();
         const hash = CryptoJS.MD5(ts + privatekey + publickey).toString();
         const url = `http://gateway.marvel.com/v1/public/comics?ts=${ts}&apikey=${publickey}&hash=${hash}`;
