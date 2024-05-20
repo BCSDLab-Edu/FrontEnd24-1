@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>버튼을 누르면 고양이 사진이 나와요</title>
+    <script>
+        function CatImage() {
+            fetch('https://api.thecatapi.com/v1/images/search?size=full')
+                .then(response => response.json()) 
+                .then(data => {
+                    const imageUrl = data[0].url;
+                    const imageElement = document.createElement('img'); 
+                    imageElement.src = imageUrl; 
+                    imageElement.alt = 'cat'; 
+                    imageElement.style.maxWidth = '500px';
+                    imageElement.style.marginTop = '20px';
+
+                    const imageContainer = document.getElementById('imageContainer');
+                    imageContainer.innerHTML = ''; 
+                    imageContainer.appendChild(imageElement); 
+                })
+                .catch(error => console.error('에러: ', error)); 
+        }
+    </script>
+</head>
+
+<body>
+    <h1>버튼을 누르면 고양이가 나와요!</h1>
+    <button onclick="CatImage()">고양이 그림 보기</button>
+    <div id="imageContainer"></div> 
+</body>
+</html>
