@@ -1,0 +1,48 @@
+body {
+  margin: 0; /* margin 제거 */
+  background-color: beige;
+}
+
+nav {
+  text-align: right;
+}
+
+.center {
+  display: flex;      /* flex 박스 사용 */
+  flex-direction: column;   /* 세로 방향 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  height: 100vh; /* 화면 전체 높이에 맞춤 */
+  
+}
+
+#id_new, #pw_new, #pw_c {
+  height: 4vh;
+  width: 50vw;
+  border-radius: 10px;
+
+}
+
+#major_new {
+  height: 4vh;
+  width: 50vw;
+  border-radius: 10px;
+}
+
+#signup {     
+  background-color: rgb(249, 229, 229);
+  font-size: large;
+  border-radius: 10px;  /* 버튼 테두리 둥글게 */
+  padding: 3px;  /* 버튼 크기 키우기 */
+  width: 200px; /* 버튼의 고정된 너비 */
+}
+
+#cancel {
+  background-color: rgb(249, 229, 229);
+  font-size: large;
+  border-radius: 10px;  /* 버튼 테두리 둥글게 */
+  padding: 3px;  /* 버튼 크기 키우기 */
+  width: 200px; /* 버튼의 고정된 너비 */
+
+}
+
