@@ -65,17 +65,34 @@ phNum.addEventListener("input", () => phNumChange(phNum));
 
 signUpBtn.addEventListener("click", () => signUp());
 function signUp() {
+  const newUser = {
+    id: id.value,
+    pw: pw.value,
+    studentNUmber: stdNum.value,
+    major: major.value,
+    phoneNumber: phNum.value,
+  };
+  const users = JSON.parse(localStorage.getItem("users")) || [];
   if (!idCheck(id)) {
-    console.log("a");
     alert("유효하지 않은 이메일 주소입니다.");
   } else if (!pwCheck(pw, passwordCheck)) {
     alert("비밀번호를 다시 확인해주세요.");
   } else {
+    users.push(newUser);
+    localStorage.setItem("users", JSON.stringify(users));
     alert("회원가입이 완료되었습니다!");
+    //폼 초기화
+    id.value = "";
+    pw.value = "";
+    passwordCheck.value = "";
+    stdNum.value = "";
+    major.value = "";
+    phNum.value = "";
+    window.location.href = "/FrontEnd24-1/signIn/signIn.html";
   }
 }
 
 cancleBtn.addEventListener("click", cancle);
 function cancle() {
-  window.location.href = "sign-in.html";
+  window.location.href = "/FrontEnd24-1/topnav/topnav.html";
 }
