@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(172, 191, 220);
+  height: 100vh;
+  margin: 0;
+}
+.signIn {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column; /*방향:세로축*/
+  flex-wrap: wrap;
+  justify-content: center; /*가로축-중심축  */
+  align-items: center; /* 세로축-교차축 */
+  height: 100vh;
+  /* 화면 고정 */
+  padding: 0;
+  margin: 0;
+}
+.inputInfor {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 350px;
+  /* 표시 */
+  border: 1px solid;
+  border-color: rgb(16, 9, 144);
+}
+.id,
+.pw {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+}
+.login {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 18px;
+  padding: 10px;
+  margin: 5px;
+}

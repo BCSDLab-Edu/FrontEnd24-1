@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(172, 191, 220);
+  height: 100vh;
+  margin: 0;
+}
+
+.topnav {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column; /*방향:세로축*/
+  flex-wrap: wrap;
+  justify-content: center; /*가로축-중심축  */
+  align-items: center; /* 세로축-교차축 */
+  height: 100vh;
+}
+
+.signin-link,
+.signup-link {
+  display: block;
+  text-align: center;
+  background-color: rgb(17, 20, 186);
+  font-size: 20px;
+  color: beige;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid;
+  margin: 5px;
+  border-color: black;
+}
