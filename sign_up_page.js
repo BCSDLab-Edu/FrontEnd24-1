@@ -1,32 +1,24 @@
 const $info_id = document.querySelector(".info_id");
 let $id_Element = document.querySelector(".id");
-const $button = document.createElement("button");
-$button.innerText = "확인";
-$info_id.appendChild($button);
 let email =/^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
-$button.addEventListener('click',() =>check());
+$id_Element.addEventListener('change',() =>check());
 function check() {
     let $id = $id_Element.value;
-    if(email.test($id))
-        alert("올바른 형식입니다.");
-    else
+    if(!email.test($id))
         alert("잘못된 이메일 형식입니다.");
 }
 //////////////////////////////////////////////////////////
 const $info_pw = document.querySelector(".info1");
 let $pw_Element = document.querySelector(".pw");
 let $pw_check_Element = document.querySelector(".pw_check");
-const $button1 = document.createElement("button");
-$button1.innerText = "확인";
-$info_pw.appendChild($button1);
-$button1.addEventListener('click',() =>check1());
+$pw_check_Element.addEventListener('change',() =>check1());
 function check1(){
     let $pw = $pw_Element.value;
     let $pw_check = $pw_check_Element.value;
         if ($pw == $pw_check)
-            alert("일치합니다.");
+            alert("비밀번호가 일치합니다.");
         else
-            alert("일치하지 않습니다.");
+            alert("비밀번호가 일치하지 않습니다.");
 }
 //////////////////////////////////////////////////////////
 const $info2 = document.querySelector(".info2");
@@ -90,12 +82,12 @@ function check2(){
 ///////////////////////////////////////////////////////////
 const $button3 = document.querySelector(".btn2");
 $button3.addEventListener("click", function(){
-    window.location.href = "3Wlogin.html";
+    window.location.href = "login_page.html";
   });
 
 const $button4 = document.querySelector(".btn3");
 $button4.addEventListener("click", function(){
-    window.location.href = "3Wlogin.html";
+    window.location.href = "login_page.html";
   });
 //////////////////////////////////////////////////////////
 fetch('https://api.thecatapi.com/v1/images/search?size=full')

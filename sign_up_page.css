@@ -74,7 +74,7 @@ body {
     flex-direction: row;
 }
 a > button,.btn2,.btn3{
-    margin-top: 90px;
+    margin-top: 50px;
     padding: 13px;
     font-size: 20px;
     font-weight: bold;
