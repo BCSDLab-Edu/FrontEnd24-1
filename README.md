@@ -99,6 +99,21 @@ BCSDLAB의 FrontEnd 트랙 24년 상반기 교육생들을 위한 레포지토�
 
 
 
+<h1><strong>실습5</strong></h1>
+<h3>『React 8주차 추가 실습과제』</h3>
+
+![image](https://github.com/BCSDLab-Edu/FrontEnd24-1/assets/156052023/c26c3f00-2ee6-48d4-ab94-5a0ceb72121b)
+
+⇒ 기본 화면으로 아무것도 입력하지 않으면 상태 변수가 ''이기 때문에 모든 배열의 요소를 보여줌.
+
+![image](https://github.com/BCSDLab-Edu/FrontEnd24-1/assets/156052023/012881d2-1c62-44a7-925e-4ff3058466c7)
+
+⇒useeffect에 의존성 배열을 onchange가 걸려있는 input을 넣어 includes함수와 filter함수를 이용해서 이벤트가 있을 때 마다 input이 포함되어있는 배열만 보여줌.
+
+
+
+
+
 
 복잡한 코드 -- >알고리즘 설명
 생소한 개념 -- > 개념 짧게 설명
