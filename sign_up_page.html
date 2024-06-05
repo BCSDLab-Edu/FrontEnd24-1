@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+    <link rel="stylesheet" href="sign_up_page.css">
+</head> 
+<body>
+    <div class="cat"></div>
+    <div class="container">
+        <div class="info_container">
+            <div id="title">회원가입</div>
+            <div class="user_info">
+                <div class="info_id"><span class="star">*</span>아이디
+                    <div>
+                        <input class="id" type="text" size="50" style="height: 25px;">
+                    </div>
+                </div>
+                <div class="info"><span class ="star">*</span>비밀번호
+                    <div>
+                        <input class="pw" type="password" size="50" style="height:25px;">
+                    </div>
+                </div>
+                <div class="info1"><span class ="star">*</span>비밀번호 확인
+                    <div>
+                        <input class="pw_check" type="password" size="50" style="height: 25px;">
+                    </div>
+                </div>
+                <div class="info2"><span class ="star">*</span>학번
+                    <input class="student_number" type="text" maxlength="10" oninput="maxnum(this,10)" size="50" style="height: 25px;">
+                </div>
+                <div class="info3">전공
+                    <input class="major" type="text" size="50" style="height: 25px;" disabled>
+                </div>
+                <div class="info4">전화번호
+                    <input class="phone_number" type="text" size="50" style="height: 25px;">
+                </div>
+                <div class="button">
+                    <button class="btn2">취소</button>
+                    <button class="btn3">가입하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sign_up_page.js"></script>
+</body>
+</html>

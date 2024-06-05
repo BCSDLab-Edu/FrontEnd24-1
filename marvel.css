@@ -1,0 +1,8 @@
+.con1 > div{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 20%;
+    height: 20%;
+}
